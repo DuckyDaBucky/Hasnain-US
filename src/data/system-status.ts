@@ -1,7 +1,7 @@
 export const systemStatus = {
     name: "Hasnain Niazi",
     domain: "hasnain.us",
-    role: "B.S. Computer Science Candidate | AI & Full-Stack Developer | Embedded Systems",
+    role: "B.S. Computer Science Student | AI & Full-Stack Developer",
     contact: {
         email: "hasnainmn7@gmail.com",
         phone: "(571) 660-8580",
