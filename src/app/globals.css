@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+<<<<<<< Updated upstream
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +24,65 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+=======
+@theme {
+  --color-background: #12343b;
+  /* Night Blue Shadow - Deepest background */
+  --color-surface: #2d545e;
+  /* Night Blue - Lighter surface */
+  --color-surface-hover: #3a6b78;
+  /* Slightly lighter Night Blue for hover */
+
+  /* Sand Tan & Night Blue Palette Mapping */
+  --color-text-primary: #e1b382;
+  /* Sand Tan - Primary text */
+  --color-text-secondary: #c89666;
+  /* Sand Tan Shadow - Secondary text */
+  --color-accent: #e1b382;
+  /* Sand Tan - Accent */
+  --color-border: #c89666;
+  /* Sand Tan Shadow - Border */
+  --color-highlight: #e1b382;
+  /* Sand Tan - Highlight */
+
+  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-text-primary);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+>>>>>>> Stashed changes
+}
+
+/* System Theme Utilities */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.system-border {
+  border: 1px solid var(--color-border);
+}
+
+.system-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.system-card:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface-hover);
+}
+
+.text-accent {
+  color: var(--color-accent);
 }
