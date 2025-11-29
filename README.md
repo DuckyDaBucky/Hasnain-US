@@ -1,9 +1,9 @@
 # hasnain.us
 
-This is the personal website and portfolio of a developer focused on applied AI, web systems, and technical design.  
-The site showcases selected projects, experiments, and writing on software engineering, AI, and product development.
+This is the personal website and portfolio of Hasnain Niazi, focusing on applied AI, full-stack engineering, and technical product design.  
+The site highlights selected projects, experiments, hackathon builds, and long-form writing across software engineering and AI.
 
-Live site: [https://hasnain.us](https://hasnain.us)
+Live site: **https://hasnain.us**
 
 ---
 
