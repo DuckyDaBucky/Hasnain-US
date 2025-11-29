@@ -24,22 +24,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-textPrimary min-h-screen flex flex-col`}
       >
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (typeof window !== 'undefined' && !window.localStorage) {
-                Object.defineProperty(window, 'localStorage', {
-                  value: {
-                    getItem: () => null,
-                    setItem: () => {},
-                    removeItem: () => {},
-                    clear: () => {}
-                  }
-                });
-              }
-            `,
-          }}
-        />
+
         <Header />
         {children}
       </body>
