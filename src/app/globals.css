@@ -1,27 +1,22 @@
 @import "tailwindcss";
 
 @theme {
+  /* Background Colors */
   --color-background: #12343b;
-  /* Night Blue Shadow - Deepest background */
   --color-surface: #2d545e;
-  /* Night Blue - Lighter surface */
   --color-surface-hover: #3a6b78;
-  /* Slightly lighter Night Blue for hover */
+  --color-surfaceHover: #3a6b78;
 
-  /* Sand Tan & Night Blue Palette Mapping */
+  /* Text Colors - define both kebab-case and camelCase for compatibility */
   --color-text-primary: #e1b382;
-  /* Sand Tan - Primary text */
+  --color-textPrimary: #e1b382;
   --color-text-secondary: #c89666;
-  /* Sand Tan Shadow - Secondary text */
-  --color-accent: #e1b382;
-  /* Sand Tan - Accent */
-  --color-border: #c89666;
-  /* Sand Tan Shadow - Border */
-  --color-highlight: #e1b382;
-  /* Sand Tan - Highlight */
+  --color-textSecondary: #c89666;
 
-  --font-mono: "Courier New", Courier, monospace;
-  --font-sans: "Inter", system-ui, sans-serif;
+  /* Accent & Border Colors */
+  --color-accent: #e1b382;
+  --color-border: #c89666;
+  --color-highlight: #e1b382;
 }
 
 :root {
@@ -59,4 +54,33 @@ body {
 
 .text-accent {
   color: var(--color-accent);
+}
+
+/* Custom utilities for camelCase color classes */
+.text-textPrimary {
+  color: var(--color-text-primary);
+}
+
+.text-textSecondary {
+  color: var(--color-text-secondary);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-surfaceHover {
+  background-color: var(--color-surface-hover);
+}
+
+.border-border {
+  border-color: var(--color-border);
+}
+
+.text-background {
+  color: var(--color-background);
 }
